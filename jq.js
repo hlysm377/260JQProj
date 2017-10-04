@@ -8,3 +8,11 @@ $(document).ready(function(){
     // bind event handlers here
 
 });
+
+function prettyAlert(text){
+    if(typeof text != 'string'){
+        return;
+    }
+    $("#prettyAlertContent").html(text);
+    $("#prettyAlert").modal('show');
+}
